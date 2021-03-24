@@ -5,9 +5,8 @@ defmodule HelloWeb.PostLive.PostComponent do
     ~L"""
     <div id="post-<%= @post.id %>" class="post">
       <div class="row">
-        <div class="column column-90 post-body">
-          <strong>@<%= @post.username %></strong> -
-          <%= @post.body %>
+        <div class="post-body">
+          <strong class="text-blue-400">@<%= @post.username %></strong> - <%= @post.body %>
         </div>
       </div>
     </div>
