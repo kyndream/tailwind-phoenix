@@ -3,4 +3,12 @@
     <h1 class="mb-8 text-6xl font-extrabold"><%= gettext "Welcome to %{name}!", name: "Phoenix" %></h1>
     <p class="text-3xl font-bold text-yellow-600">Peace of mind from prototype to production</p>
   </div>
+
+  <h1>hello world</h1>
+
+  <div x-data="{ count: 0 }">
+    <button @click="count++">+</button>
+    <button @click="count--">-</button>
+    <span x-text="count"></span>
+  </div>
 </section>
